@@ -1,6 +1,6 @@
 const json = require('./data.json');
 
-var json2 = [
+/*var json2 = [
     {
         id: 1,
         name: "Item 1"
@@ -17,7 +17,7 @@ var json2 = [
         id: 4,
         name: "Item 4"
     }
-]
+]*/
 
 function sortAndPrint(json) {
     json.sort((a, b) => parseInt(a.id) - parseInt(b.id));
@@ -29,4 +29,4 @@ function sortAndPrint(json) {
     }
 }
 
-sortAndPrint(json2);
+sortAndPrint(json);
