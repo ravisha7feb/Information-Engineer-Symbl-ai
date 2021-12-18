@@ -1,3 +1,4 @@
+//using https
 function sortAndPrint(json_obj) {
     json_obj.sort((a, b) => parseInt(a.id) - parseInt(b.id));
     for(var i = 0; i < json_obj.length; i++) {
@@ -9,7 +10,7 @@ function sortAndPrint(json_obj) {
 }
 console.log("Fetching data...");
 const https = require('https')
-const url = "https://reqres.in/api/products/3";
+const url = "https://www.example.com/get-data";
 https.get(url, res => {
 let data = '';
 res.on('data', chunk => {

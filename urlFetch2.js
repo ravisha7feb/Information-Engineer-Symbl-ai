@@ -1,3 +1,4 @@
+//using fetch
 const fetch = require("node-fetch");
 function sortAndPrint(json_obj) {
     json_obj.sort((a, b) => parseInt(a.id) - parseInt(b.id));
@@ -20,7 +21,7 @@ const getJSON = async url => {
 
   
 console.log("Fetching data...");
-getJSON("https://soundcloud.com/oembed?url=http%3A//soundcloud.com/forss/flickermood&format=json").then(data => {
+getJSON("https://www.example.com/get-data").then(data => {
   console.log(data);
   //sortAndPrint(data);
 }).catch(error => {
